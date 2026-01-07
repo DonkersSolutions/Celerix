@@ -15,6 +15,52 @@
 
 ---
 
+## 🛠 What is it?
+**Donkers Dev Toolbox** is a high-performance "Swiss Army Knife" for your daily development workflow, built with **Tauri 2.0** and **Rust**.
+
+### Core Philosophy
+* **Local-First:** Your data stays on your machine. Import/Export functionality works directly with your local file system.
+* **No Bloat:** A native desktop experience that stays out of your way (~35MB RAM usage).
+* **Privacy:** No tracking, no cloud-syncing, no accounts required.
+
+---
+
+## ✨ Current Features
+
+### 🧩 Mini Applications
+Focused tools to keep your project on track:
+* **Widget Dashboard:** A customizable space for your daily dev stats.
+* **Kanban Board:** Drag-and-drop task management, stored locally in your toolbox.
+
+### 🐙 Git GUI (Experimental)
+A visual interface for your local repositories.
+* **Prerequisite:** You must have **Git** installed on your system, and SSH setup, the app can help you with that step (See GitGUI → Settings)
+* **Status:** Supports basic git operations branches/commits/pull/push/fetch/tags/stashes.
+
+### ⚙️ Developer Utilities
+* **UUID Generator:** Fast, offline ID generation.
+* **BASE64 Encode/Decode:** Encode and/or Decode base64 strings in a flash.
+* **JWT Decoder:** Decode JWT tokens for quick inspection.
+* **Data Portability:** Full support for importing/exporting your settings and data to local files.
+
+### 💾 Data Portability & Compatibility
+While **Data Portability** is a core pillar of this project, please be aware that our internal data schemas are evolving rapidly during this Pre-Alpha phase.
+
+* **Compatibility:** Export files created in an older version may not be compatible with newer versions until we reach a stable data format (v1.0).
+* **Recommendation:** Keep a backup of your data, but expect to perform a "fresh start" if the data structure undergoes a major shift between updates.
+
+---
+
+### 🪟 Windows Support Status
+Windows is currently a **secondary preview platform**.
+
+* **Core Tools:** All local utilities (JSON, UUID, etc.) use cross-platform logic and are fully functional.
+* **Git Operations:** We use **Gix** for high-performance, read-only operations, which works across all platforms. However, operations requiring **SSH authentication** currently shell out to system Git.
+* **Current Limitation:** Due to differences in path handling and line endings (`CRLF`), SSH-based operations on Windows are experimental and not currently optimized.
+* **Focus:** We are not actively troubleshooting Windows-specific Git/SSH issues while we focus on core feature stability for macOS and Linux.
+
+---
+
 ## 🛡️ Installation & Security Notes
 
 As this project is in a **Pre-Alpha** stage, the binaries are not yet digitally signed or notarized. Your operating system will likely flag the application as a security risk. This is expected behavior for unsigned software.
@@ -36,37 +82,19 @@ Windows **SmartScreen** will likely prevent the installer from starting with a b
 3. Click **Run anyway** to start the installation.
 
 ### 🐧 For Linux Users
-To install the `.deb` package and ensure all dependencies are correctly handled, use the terminal:
+To install the `.deb` or `.rpm`package and ensure all dependencies are correctly handled, use the terminal:
+
+Debian/Ubuntu:
 ```shell
-sudo apt install ./donkers-toolbox_0.1.4_amd64.deb
+sudo apt install ./Donkers.Dev.Toolbox_0.1.4_amd64.deb
 ``` 
+Fedora/RHEL/OpenSUSE:
+```shell
+sudo dnf install ./Donkers.Dev.Toolbox-0.1.4-1.x86_64.rpm
+```
 
 ---
 
-## 🛠 What is it?
-**Donkers Dev Toolbox** is a high-performance "Swiss Army Knife" for your daily development workflow, built with **Tauri 2.0** and **Rust**.
-
-### Core Philosophy
-* **Local-First:** Your data stays on your machine. Import/Export functionality works directly with your local file system.
-* **No Bloat:** A native desktop experience that stays out of your way (~35MB RAM usage).
-* **Privacy:** No tracking, no cloud-syncing, no accounts required.
-
----
-
-## ✨ Current Features
-
-### 🐙 Git GUI (Experimental)
-A visual interface for your local repositories.
-* **Prerequisite:** You must have **Git** installed on your system, and SSH setup, the app can help you with that step (See GitGUI → Settings)
-* **Status:** Supports basic git operations branches/commits/pull/push/fetch/tags/stashes.
-
-### ⚙️ Developer Utilities
-* **UUID Generator:** Fast, offline ID generation.
-* **BASE64 Encode/Decode:** Clean up messy data locally.
-* **JWT Decoder:** Decode JWT tokens for quick inspection.
-* **Data Portability:** Full support for importing/exporting your settings and data to local files.
-
----
 
 ## 🗺 Roadmap
 - [ ] **Phase 1 (Current):** Stabilize cross-platform builds and core utilities.
@@ -80,7 +108,7 @@ A visual interface for your local repositories.
 Visit the **[Releases](https://github.com/DonkersSolutions/DevToolbox/releases)** page for the latest installers:
 * **macOS:** Apple Silicon & Intel versions.
 * **Windows:** x64 & ARM64 versions.
-* **Linux:** `.deb` package for Debian/Ubuntu.
+* **Linux:** `.deb` package for Debian/Ubuntu and `.rpm` for Fedora/RHEL/OpenSUSE.
 
 ---
 
