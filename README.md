@@ -54,8 +54,8 @@ While **Data Portability** is a core pillar of this project, please be aware tha
 ### 🪟 Windows Support Status
 Windows is currently a **secondary preview platform**.
 
-* **Core Tools:** All local utilities (JSON, UUID, etc.) use cross-platform logic and are fully functional.
-* **Git Operations:** We use **Gix** for high-performance, read-only operations, which works across all platforms. However, operations requiring **SSH authentication** currently shell out to system Git.
+* **Core Tools:** All local utilities (JSON, UUID, etc.) and mini apps use cross-platform logic and are fully functional.
+* **Git Operations:** We use **Gix** for high-performance, read-only operations, which work across all platforms. However, operations requiring **SSH authentication** currently shell out to system Git.
 * **Current Limitation:** Due to differences in path handling and line endings (`CRLF`), SSH-based operations on Windows are experimental and not currently optimized.
 * **Focus:** We are not actively troubleshooting Windows-specific Git/SSH issues while we focus on core feature stability for macOS and Linux.
 
@@ -75,7 +75,7 @@ If macOS claims the app is **"Damaged"** or should be moved to the Trash, it is 
    ```
 
 ### 🪟 For Windows Users
-Windows **SmartScreen** will likely prevent the installer from starting with a blue banner stating "Windows protected your PC." This is standard for apps that are not yet digitally signed.
+Windows **SmartScreen** will likely prevent the installer from starting with a blue banner stating "Windows protected your PC." This is a standard for apps that are not yet digitally signed.
 
 1. Click the **"More info"** link (this is the small underlined text directly under the main warning message).
 2. A new button labeled **"Run anyway"** will appear at the bottom of the window.
@@ -97,9 +97,9 @@ sudo dnf install ./Donkers.Dev.Toolbox-0.1.4-1.x86_64.rpm
 
 
 ## 🗺 Roadmap
-- [ ] **Phase 1 (Current):** Stabilize cross-platform builds and core utilities.
-- [ ] **Phase 2:** Expand the toolset (Base64, Regex Tester, JWT Decoder).
-- [ ] **Phase 3 (Stability):** Bug fixing and UI polish.
+- [x] **Phase 1 (Foundation):** Stabilize cross-platform builds and core utilities.
+- [ ] **Phase 2 (Features):** Expand the toolset (More widgets, More mini Apps, tools like: Regex Tester).
+- [ ] **Phase 3 (Stability):** Bug fixing and UI polish, and finalizing on data structures.
 - [ ] **Phase 4 (Launch):** **Open Source Release** and migration to public code repository.
 
 ---
