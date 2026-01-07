@@ -15,6 +15,34 @@
 
 ---
 
+## 🛡️ Installation & Security Notes
+
+As this project is in a **Pre-Alpha** stage, the binaries are not yet digitally signed or notarized. Your operating system will likely flag the application as a security risk. This is expected behavior for unsigned software.
+
+### 🍎 For macOS Users
+If macOS claims the app is **"Damaged"** or should be moved to the Trash, it is simply because the app is unsigned. To bypass this:
+
+1. Drag the application into your **Applications** folder.
+2. Open your **Terminal** and run:
+   ```shell
+   sudo xattr -rd com.apple.quarantine /Applications/Donkers\ Dev\ Toolbox.app
+   ```
+
+### 🪟 For Windows Users
+Windows **SmartScreen** will likely prevent the installer from starting with a blue banner stating "Windows protected your PC." This is standard for apps that are not yet digitally signed.
+
+1. Click the **"More info"** link (this is the small underlined text directly under the main warning message).
+2. A new button labeled **"Run anyway"** will appear at the bottom of the window.
+3. Click **Run anyway** to start the installation.
+
+### 🐧 For Linux Users
+To install the `.deb` package and ensure all dependencies are correctly handled, use the terminal:
+```shell
+sudo apt install ./donkers-toolbox_0.1.4_amd64.deb
+``` 
+
+---
+
 ## 🛠 What is it?
 **Donkers Dev Toolbox** is a high-performance "Swiss Army Knife" for your daily development workflow, built with **Tauri 2.0** and **Rust**.
 
