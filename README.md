@@ -1,8 +1,8 @@
-# 🚀 Donkers Dev Toolbox
+# 🚀 Celerix
 
 **A lightweight, local-first developer productivity suite.**
 
-![Release Version](https://img.shields.io/github/v/release/DonkersSolutions/DevToolbox?label=Pre-Alpha&color=orange)
+![Release Version](https://img.shields.io/github/v/release/DonkersSolutions/Celerix?label=Pre-Alpha&color=orange)
 ![License](https://img.shields.io/badge/license-Custom-blue)
 ![Platform Support](https://img.shields.io/badge/platform-macOS%20|%20Windows%20|%20Linux-lightgrey)
 
@@ -16,7 +16,7 @@
 ---
 
 ## 🛠 What is it?
-**Donkers Dev Toolbox** is a high-performance "Swiss Army Knife" for your daily development workflow, It leverages a **Rust** backend via **Tauri 2.0** and a reactive **Vue 3** frontend to deliver a native experience with a minimal footprint.
+**Celerix** is a high-performance "Swiss Army Knife" for your daily development workflow, It leverages a **Rust** backend via **Tauri 2.0** and a reactive **Vue 3** frontend to deliver a native experience with a minimal footprint.
 
 ### Core Philosophy
 * **Local-First:** Your data stays on your machine. Import/Export functionality works directly with your local file system.
@@ -71,7 +71,7 @@ If macOS claims the app is **"Damaged"** or should be moved to the Trash, it is 
 1. Drag the application into your **Applications** folder.
 2. Open your **Terminal** and run:
    ```shell
-   sudo xattr -rd com.apple.quarantine /Applications/Donkers\ Dev\ Toolbox.app
+   sudo xattr -rd com.apple.quarantine /Applications/Celerix.app
    ```
 
 ### 🪟 For Windows Users
@@ -86,11 +86,11 @@ To install the `.deb` or `.rpm`package and ensure all dependencies are correctly
 
 Debian/Ubuntu:
 ```shell
-sudo apt install ./Donkers.Dev.Toolbox_0.1.4_amd64.deb
+sudo apt install ./Celerix_0.1.4_amd64.deb
 ``` 
 Fedora/RHEL/OpenSUSE:
 ```shell
-sudo dnf install ./Donkers.Dev.Toolbox-0.1.4-1.x86_64.rpm
+sudo dnf install ./Celerix-0.1.4-1.x86_64.rpm
 ```
 
 ---
@@ -105,7 +105,7 @@ sudo dnf install ./Donkers.Dev.Toolbox-0.1.4-1.x86_64.rpm
 ---
 
 ## ⬇️ Installation
-Visit the **[Releases](https://github.com/DonkersSolutions/DevToolbox/releases)** page for the latest installers:
+Visit the **[Releases](https://github.com/DonkersSolutions/Celerix/releases)** page for the latest installers:
 * **macOS:** Apple Silicon & Intel versions.
 * **Windows:** x64 & ARM64 versions.
 * **Linux:** `.deb` package for Debian/Ubuntu and `.rpm` for Fedora/RHEL/OpenSUSE.
