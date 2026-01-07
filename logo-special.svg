@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <path id="tray-beam" d="M80 80 H180 L432 432 H332 Z" />
+    </defs>
+
+    <g fill="black">
+        <use href="#tray-beam" />
+        <use href="#tray-beam" transform="matrix(-1 0 0 1 512 0)" />
+    </g>
+</svg>

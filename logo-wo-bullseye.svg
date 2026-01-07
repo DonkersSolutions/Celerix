@@ -1,0 +1,17 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <path id="wide-beam" d="M80 80 H180 L432 432 H332 Z" />
+        <mask id="core-mask">
+            <rect width="512" height="512" fill="white" />
+            <circle cx="256" cy="256" r="60" fill="black" />
+        </mask>
+    </defs>
+
+    <g fill="#00529B" mask="url(#core-mask)">
+        <use href="#wide-beam" />
+        <use href="#wide-beam" transform="matrix(-1 0 0 1 512 0)" />
+    </g>
+
+    <circle cx="256" cy="256" r="48" fill="#FF8C00" />
+    <circle cx="256" cy="256" r="18" fill="white" fill-opacity="0.9" />
+</svg>
